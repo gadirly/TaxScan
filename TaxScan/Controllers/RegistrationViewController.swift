@@ -43,7 +43,7 @@ class RegistrationViewController: UIViewController {
         return textField
     }()
     
-    private let signUpBtn: UIButton = {
+    private lazy var signUpBtn: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Sign up", for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -51,6 +51,7 @@ class RegistrationViewController: UIViewController {
         button.layer.cornerRadius = 5
         button.setHeight(50)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        button.addTarget(self, action: #selector(signUpClicked), for: .touchUpInside)
         button.isEnabled = false
         
         return button
@@ -72,6 +73,24 @@ class RegistrationViewController: UIViewController {
     }
     
     // MARK: - Action
+    
+    @objc func signUpClicked() {
+        guard let name = nameTextField.text, let surname = surnameTextField.text, let email = emailTextField.text, let password = passwordTextField.text else { return }
+        
+        AuthService.registerUser(withCredentials: AuthCredentials(name: name,
+                                                                  surname: surname,
+                                                                  email: email,
+                                                                  password: password), completion: { error in
+            if let error = error {
+                print("DEBUG: Failed to register the user \(error.localizedDescription)")
+                return
+            }
+            
+            self.dismiss(animated: true)
+        })
+        
+        
+    }
     
     @objc func handleLogin() {
         navigationController?.popViewController(animated: true)

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
     
@@ -35,7 +36,7 @@ class LoginViewController: UIViewController {
     }()
     
     
-    private let loginBtn: UIButton = {
+    private lazy var loginBtn: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Log in", for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -43,6 +44,7 @@ class LoginViewController: UIViewController {
         button.layer.cornerRadius = 5
         button.setHeight(50)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        button.addTarget(self, action: #selector(loginBtnClicked), for: .touchUpInside)
         button.isEnabled = false
         return button
     }()
@@ -77,6 +79,21 @@ class LoginViewController: UIViewController {
         let vc = RegistrationViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @objc func loginBtnClicked() {
+        guard let email = emailTextField.text, let password = passwordTextField.text
+        else {return}
+        
+        AuthService.loginUser(withEmail: email, password: password) { _, error in
+            if let error {
+                print("DEBUG: Failed to log in user: \(error.localizedDescription)")
+                return
+            }
+            
+            self.dismiss(animated: true)
+        }
+    }
+    
     
     @objc func textDidChange(sender: UITextField) {
         switch sender {

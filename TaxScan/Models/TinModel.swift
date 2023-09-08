@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct TinModel {
+    let tin: String
+    let companyName: String
+}
