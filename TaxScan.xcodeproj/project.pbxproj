@@ -21,8 +21,15 @@
 		0B814F152AAB123D00D80FC4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B814F142AAB123D00D80FC4 /* AuthService.swift */; };
 		0B814F172AAB150100D80FC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B814F162AAB150100D80FC4 /* GoogleService-Info.plist */; };
 		0B814F1B2AABB0B600D80FC4 /* TinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B814F1A2AABB0B600D80FC4 /* TinTableViewCell.swift */; };
-		0B814F1D2AABB39200D80FC4 /* TinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B814F1C2AABB39200D80FC4 /* TinModel.swift */; };
+		0B814F1D2AABB39200D80FC4 /* Tin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B814F1C2AABB39200D80FC4 /* Tin.swift */; };
+		0B814F1F2AADB78C00D80FC4 /* TinInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B814F1E2AADB78C00D80FC4 /* TinInformation.swift */; };
+		0B814F212AADB7A600D80FC4 /* TaxesApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B814F202AADB7A600D80FC4 /* TaxesApiManager.swift */; };
+		0B814F232AADBCBE00D80FC4 /* TinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B814F222AADBCBE00D80FC4 /* TinViewModel.swift */; };
+		0B814F272AADC1F500D80FC4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B814F262AADC1F500D80FC4 /* Constants.swift */; };
+		0B814F292AADC44A00D80FC4 /* TinService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B814F282AADC44A00D80FC4 /* TinService.swift */; };
+		0B814F2B2AADF9DF00D80FC4 /* TaxPayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B814F2A2AADF9DF00D80FC4 /* TaxPayerModel.swift */; };
 		0B876ACD2AAA515D0009BD6A /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876ACC2AAA515D0009BD6A /* AuthenticationViewModel.swift */; };
+		0B9CCAE82AB778A000C7C07C /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CCAE72AB778A000C7C07C /* StatusViewController.swift */; };
 		75C9B14167CF6BF18B5C2AB1 /* Pods_TaxScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B5CB8E45521572A168B44BB /* Pods_TaxScan.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +50,15 @@
 		0B814F142AAB123D00D80FC4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		0B814F162AAB150100D80FC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0B814F1A2AABB0B600D80FC4 /* TinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinTableViewCell.swift; sourceTree = "<group>"; };
-		0B814F1C2AABB39200D80FC4 /* TinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinModel.swift; sourceTree = "<group>"; };
+		0B814F1C2AABB39200D80FC4 /* Tin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tin.swift; sourceTree = "<group>"; };
+		0B814F1E2AADB78C00D80FC4 /* TinInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinInformation.swift; sourceTree = "<group>"; };
+		0B814F202AADB7A600D80FC4 /* TaxesApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaxesApiManager.swift; path = TaxScan/Managers/TaxesApiManager.swift; sourceTree = SOURCE_ROOT; };
+		0B814F222AADBCBE00D80FC4 /* TinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinViewModel.swift; sourceTree = "<group>"; };
+		0B814F262AADC1F500D80FC4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0B814F282AADC44A00D80FC4 /* TinService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinService.swift; sourceTree = "<group>"; };
+		0B814F2A2AADF9DF00D80FC4 /* TaxPayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxPayerModel.swift; sourceTree = "<group>"; };
 		0B876ACC2AAA515D0009BD6A /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		0B9CCAE72AB778A000C7C07C /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		318BD50A3B827295DAD854A7 /* Pods-TaxScan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxScan.release.xcconfig"; path = "Target Support Files/Pods-TaxScan/Pods-TaxScan.release.xcconfig"; sourceTree = "<group>"; };
 		9B5CB8E45521572A168B44BB /* Pods_TaxScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaxScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB88BDC0DE15AA0B9F4D97BB /* Pods-TaxScan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxScan.debug.xcconfig"; path = "Target Support Files/Pods-TaxScan/Pods-TaxScan.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				0B876ACC2AAA515D0009BD6A /* AuthenticationViewModel.swift */,
+				0B814F222AADBCBE00D80FC4 /* TinViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -121,6 +136,7 @@
 		0B2131CA2AA8C79100E7DFCF /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				0B814F202AADB7A600D80FC4 /* TaxesApiManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -136,7 +152,9 @@
 		0B2131CE2AA8C7F300E7DFCF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0B814F1C2AABB39200D80FC4 /* TinModel.swift */,
+				0B814F1C2AABB39200D80FC4 /* Tin.swift */,
+				0B814F1E2AADB78C00D80FC4 /* TinInformation.swift */,
+				0B814F2A2AADF9DF00D80FC4 /* TaxPayerModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -145,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				0B814F142AAB123D00D80FC4 /* AuthService.swift */,
+				0B814F282AADC44A00D80FC4 /* TinService.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -164,6 +183,7 @@
 				0B2131C22AA8C46C00E7DFCF /* MainTabBarController.swift */,
 				0B2131C42AA8C59100E7DFCF /* HomeViewController.swift */,
 				0B2131C62AA8C5A700E7DFCF /* SettingsViewController.swift */,
+				0B9CCAE72AB778A000C7C07C /* StatusViewController.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -172,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				0B2131D92AA8D10C00E7DFCF /* Extensions.swift */,
+				0B814F262AADC1F500D80FC4 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -311,16 +332,23 @@
 				0B2131D32AA8CD9400E7DFCF /* LoginViewController.swift in Sources */,
 				0B2131DA2AA8D10C00E7DFCF /* Extensions.swift in Sources */,
 				0B2131C52AA8C59100E7DFCF /* HomeViewController.swift in Sources */,
+				0B814F2B2AADF9DF00D80FC4 /* TaxPayerModel.swift in Sources */,
+				0B9CCAE82AB778A000C7C07C /* StatusViewController.swift in Sources */,
 				0B2131D52AA8CDA300E7DFCF /* RegistrationViewController.swift in Sources */,
+				0B814F232AADBCBE00D80FC4 /* TinViewModel.swift in Sources */,
 				0B2131B12AA8C3A000E7DFCF /* ViewController.swift in Sources */,
 				0B814F152AAB123D00D80FC4 /* AuthService.swift in Sources */,
 				0B2131AD2AA8C3A000E7DFCF /* AppDelegate.swift in Sources */,
+				0B814F1F2AADB78C00D80FC4 /* TinInformation.swift in Sources */,
+				0B814F212AADB7A600D80FC4 /* TaxesApiManager.swift in Sources */,
 				0B876ACD2AAA515D0009BD6A /* AuthenticationViewModel.swift in Sources */,
 				0B2131C32AA8C46C00E7DFCF /* MainTabBarController.swift in Sources */,
-				0B814F1D2AABB39200D80FC4 /* TinModel.swift in Sources */,
+				0B814F1D2AABB39200D80FC4 /* Tin.swift in Sources */,
+				0B814F292AADC44A00D80FC4 /* TinService.swift in Sources */,
 				0B2131AF2AA8C3A000E7DFCF /* SceneDelegate.swift in Sources */,
 				0B2131C72AA8C5A700E7DFCF /* SettingsViewController.swift in Sources */,
 				0B814F1B2AABB0B600D80FC4 /* TinTableViewCell.swift in Sources */,
+				0B814F272AADC1F500D80FC4 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
