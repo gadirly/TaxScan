@@ -28,8 +28,8 @@ class MainTabBarController: UITabBarController {
         vc1.tabBarItem.image = UIImage(systemName: "house")
         vc2.tabBarItem.image = UIImage(systemName: "gear")
         
-        tabBar.tintColor = .white
-        tabBar.backgroundColor = .black
+        tabBar.tintColor = .label
+        tabBar.backgroundColor = .systemBackground
         setViewControllers([vc1, vc2], animated: true)
     }
     

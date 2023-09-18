@@ -12,20 +12,10 @@ class TinTableViewCell: UITableViewCell {
     // MARK: - Properties
     
     static let identifier = "TinTableViewCell"
-    
-    private let playButton: UIButton = {
-        let button = UIButton()
-        button.tintColor = .label
-       
-        button.setImage(UIImage(systemName: "greaterthan"), for: .normal)
-        button.contentHorizontalAlignment = .fill
-        button.contentVerticalAlignment = .fill
-        return button
-    }()
-    
+  
     private var tinLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 16, weight: .bold)
+        label.font = .systemFont(ofSize: 15, weight: .bold)
         label.numberOfLines = 0
         return label
     }()
@@ -34,9 +24,16 @@ class TinTableViewCell: UITableViewCell {
     private let companyLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: 16, weight: .thin)
+        label.font = .systemFont(ofSize: 13, weight: .regular)
         label.numberOfLines = 0
         return label
+    }()
+    
+    private let playButton: UIButton = {
+        let button = UIButton()
+        button.tintColor = .label
+        button.setImage(UIImage(systemName: "chevron.right"), for: .normal)
+        return button
     }()
     
     // MARK: - Initializer
@@ -45,6 +42,11 @@ class TinTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.addSubview(tinLabel)
         contentView.addSubview(companyLabel)
+        contentView.addSubview(playButton)
+        
+    
+    
+       
         
         configureUi()
     }
@@ -55,16 +57,28 @@ class TinTableViewCell: UITableViewCell {
     
    
     
+   
+    
     // MARK: Helpers
     
     private func configureUi() {
+        
+        
         tinLabel.anchor(top: contentView.topAnchor, left: contentView.leftAnchor, paddingTop: 10, paddingLeft: 10)
-        companyLabel.anchor(top: tinLabel.bottomAnchor, left: contentView.leftAnchor, paddingTop: 10, paddingLeft: 10)
+        companyLabel.anchor(top: tinLabel.bottomAnchor, left: contentView.leftAnchor, right: contentView.rightAnchor, paddingTop: 10, paddingLeft: 10, paddingRight: 35)
+        
+        playButton.anchor(right: contentView.rightAnchor, paddingRight: 20)
+        playButton.centerY(inView: contentView)
+        
     }
     
-    public func configure(with model: TinModel) {
+    public func configure(with model: Tin, color: UIColor, label: UIColor) {
         tinLabel.text = model.tin
-        companyLabel.text = model.companyName
+        companyLabel.text = model.company
+        tinLabel.textColor = label
+        companyLabel.textColor = label
+        playButton.tintColor = label
+        contentView.backgroundColor = color
     }
     
     
