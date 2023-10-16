@@ -6,7 +6,8 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseDatabase
+import FirebaseFirestore
 
 let COLLECTION_USERS = Firestore.firestore().collection("users")
 let TINS_REF = Database.database().reference().child("tins")

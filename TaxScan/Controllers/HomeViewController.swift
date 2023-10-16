@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 
 class HomeViewController: UIViewController {
@@ -268,7 +269,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             if let error {
                 print("DEBUG: Error while deleting tin: \(error)")
             }else {
-                print("DEBUG: TIN Successfullt deleted.")
+                print("DEBUG: TIN Successfully deleted.")
             }
         }
         
@@ -282,7 +283,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let vc = StatusViewController()
         let myTin = myTinList[indexPath.row]
         guard let tinStatus = myTin.status else {
-            print("NOT Risky")
+            let vcRisky = NotRiskyViewController()
+            present(vcRisky, animated: true)
             return
         }
         vc.configure(with: tinStatus)

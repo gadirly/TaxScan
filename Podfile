@@ -6,11 +6,10 @@ target 'TaxScan' do
   use_frameworks!
 
   # Pods for TaxScan
-	pod 'Firebase/Core'
-	pod 'Firebase/Database'
-	pod 'Firebase/Firestore'
-	pod 'Firebase/Messaging'
-	pod 'Firebase/Auth'
-	pod 'ActiveLabel'
-	pod 'JGProgressHUD','~>2.0.3'
+
+pod 'Firebase'
+pod 'FirebaseAuth'
+pod 'FirebaseFirestore'
+pod 'FirebaseDatabase'
+
 end

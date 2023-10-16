@@ -8,6 +8,8 @@
 import Foundation
 import Firebase
 import FirebaseFirestore
+import FirebaseAuth
+
 
 struct AuthCredentials {
     let name: String

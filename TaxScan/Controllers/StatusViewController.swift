@@ -40,7 +40,10 @@ class StatusViewController: UIViewController {
     
     private let statusImage: UIImageView = {
         var imageView = UIImageView()
-        
+        imageView.layer.shadowColor = UIColor.gray.cgColor
+        imageView.layer.shadowOpacity = 0.3
+        imageView.layer.shadowOffset = CGSize(width: 0, height: 4)
+        imageView.layer.shadowRadius = 6
         return imageView
     }()
     
@@ -70,7 +73,7 @@ class StatusViewController: UIViewController {
     
     func configureUI() {
         title = "Status"
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .white
         view.addSubview(statusTableView)
         statusTableView.delegate = self
         statusTableView.dataSource = self

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0B2131AD2AA8C3A000E7DFCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2131AC2AA8C3A000E7DFCF /* AppDelegate.swift */; };
 		0B2131AF2AA8C3A000E7DFCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2131AE2AA8C3A000E7DFCF /* SceneDelegate.swift */; };
-		0B2131B12AA8C3A000E7DFCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2131B02AA8C3A000E7DFCF /* ViewController.swift */; };
 		0B2131B62AA8C3A200E7DFCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B2131B52AA8C3A200E7DFCF /* Assets.xcassets */; };
 		0B2131B92AA8C3A200E7DFCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B2131B72AA8C3A200E7DFCF /* LaunchScreen.storyboard */; };
 		0B2131C32AA8C46C00E7DFCF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2131C22AA8C46C00E7DFCF /* MainTabBarController.swift */; };
@@ -30,14 +29,14 @@
 		0B814F2B2AADF9DF00D80FC4 /* TaxPayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B814F2A2AADF9DF00D80FC4 /* TaxPayerModel.swift */; };
 		0B876ACD2AAA515D0009BD6A /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B876ACC2AAA515D0009BD6A /* AuthenticationViewModel.swift */; };
 		0B9CCAE82AB778A000C7C07C /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9CCAE72AB778A000C7C07C /* StatusViewController.swift */; };
-		75C9B14167CF6BF18B5C2AB1 /* Pods_TaxScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B5CB8E45521572A168B44BB /* Pods_TaxScan.framework */; };
+		2CEB99EE98CBAC02A6DB30F9 /* Pods_TaxScan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33D8C9F13069EB26D4B1099 /* Pods_TaxScan.framework */; };
+		B13948462ADD22FB0035593D /* NotRiskyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13948452ADD22FB0035593D /* NotRiskyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B2131A92AA8C3A000E7DFCF /* TaxScan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaxScan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B2131AC2AA8C3A000E7DFCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B2131AE2AA8C3A000E7DFCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0B2131B02AA8C3A000E7DFCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0B2131B52AA8C3A200E7DFCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B2131B82AA8C3A200E7DFCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B2131BA2AA8C3A200E7DFCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,9 +58,10 @@
 		0B814F2A2AADF9DF00D80FC4 /* TaxPayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxPayerModel.swift; sourceTree = "<group>"; };
 		0B876ACC2AAA515D0009BD6A /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		0B9CCAE72AB778A000C7C07C /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
-		318BD50A3B827295DAD854A7 /* Pods-TaxScan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxScan.release.xcconfig"; path = "Target Support Files/Pods-TaxScan/Pods-TaxScan.release.xcconfig"; sourceTree = "<group>"; };
-		9B5CB8E45521572A168B44BB /* Pods_TaxScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaxScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB88BDC0DE15AA0B9F4D97BB /* Pods-TaxScan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxScan.debug.xcconfig"; path = "Target Support Files/Pods-TaxScan/Pods-TaxScan.debug.xcconfig"; sourceTree = "<group>"; };
+		6DA904D8642035CDD1908F56 /* Pods-TaxScan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxScan.release.xcconfig"; path = "Target Support Files/Pods-TaxScan/Pods-TaxScan.release.xcconfig"; sourceTree = "<group>"; };
+		ADFF3B6BD3EA4F9BEC1FD124 /* Pods-TaxScan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxScan.debug.xcconfig"; path = "Target Support Files/Pods-TaxScan/Pods-TaxScan.debug.xcconfig"; sourceTree = "<group>"; };
+		B13948452ADD22FB0035593D /* NotRiskyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotRiskyViewController.swift; sourceTree = "<group>"; };
+		C33D8C9F13069EB26D4B1099 /* Pods_TaxScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaxScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75C9B14167CF6BF18B5C2AB1 /* Pods_TaxScan.framework in Frameworks */,
+				2CEB99EE98CBAC02A6DB30F9 /* Pods_TaxScan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,8 +81,8 @@
 			children = (
 				0B2131AB2AA8C3A000E7DFCF /* TaxScan */,
 				0B2131AA2AA8C3A000E7DFCF /* Products */,
-				9399291962D792F7A306E29E /* Pods */,
 				E616B311C6980D2DECE8AF8F /* Frameworks */,
+				25EBB61DAF0624848934F465 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,7 +106,6 @@
 				0B2131C12AA8C43500E7DFCF /* Controllers */,
 				0B2131AC2AA8C3A000E7DFCF /* AppDelegate.swift */,
 				0B2131AE2AA8C3A000E7DFCF /* SceneDelegate.swift */,
-				0B2131B02AA8C3A000E7DFCF /* ViewController.swift */,
 				0B2131B52AA8C3A200E7DFCF /* Assets.xcassets */,
 				0B2131B72AA8C3A200E7DFCF /* LaunchScreen.storyboard */,
 				0B2131BA2AA8C3A200E7DFCF /* Info.plist */,
@@ -184,6 +183,7 @@
 				0B2131C42AA8C59100E7DFCF /* HomeViewController.swift */,
 				0B2131C62AA8C5A700E7DFCF /* SettingsViewController.swift */,
 				0B9CCAE72AB778A000C7C07C /* StatusViewController.swift */,
+				B13948452ADD22FB0035593D /* NotRiskyViewController.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -197,11 +197,11 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		9399291962D792F7A306E29E /* Pods */ = {
+		25EBB61DAF0624848934F465 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EB88BDC0DE15AA0B9F4D97BB /* Pods-TaxScan.debug.xcconfig */,
-				318BD50A3B827295DAD854A7 /* Pods-TaxScan.release.xcconfig */,
+				ADFF3B6BD3EA4F9BEC1FD124 /* Pods-TaxScan.debug.xcconfig */,
+				6DA904D8642035CDD1908F56 /* Pods-TaxScan.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -209,7 +209,7 @@
 		E616B311C6980D2DECE8AF8F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9B5CB8E45521572A168B44BB /* Pods_TaxScan.framework */,
+				C33D8C9F13069EB26D4B1099 /* Pods_TaxScan.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -221,11 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B2131BD2AA8C3A200E7DFCF /* Build configuration list for PBXNativeTarget "TaxScan" */;
 			buildPhases = (
-				35933B1D65CE2A5069854E0C /* [CP] Check Pods Manifest.lock */,
+				097DF0D3A91EE40B73002F5F /* [CP] Check Pods Manifest.lock */,
 				0B2131A52AA8C3A000E7DFCF /* Sources */,
 				0B2131A62AA8C3A000E7DFCF /* Frameworks */,
 				0B2131A72AA8C3A000E7DFCF /* Resources */,
-				809E6DAA71AD4F47A4558D6C /* [CP] Embed Pods Frameworks */,
+				82C7EEE1308BFE6D6D51A391 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -283,7 +283,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		35933B1D65CE2A5069854E0C /* [CP] Check Pods Manifest.lock */ = {
+		097DF0D3A91EE40B73002F5F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -305,7 +305,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		809E6DAA71AD4F47A4558D6C /* [CP] Embed Pods Frameworks */ = {
+		82C7EEE1308BFE6D6D51A391 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -332,11 +332,11 @@
 				0B2131D32AA8CD9400E7DFCF /* LoginViewController.swift in Sources */,
 				0B2131DA2AA8D10C00E7DFCF /* Extensions.swift in Sources */,
 				0B2131C52AA8C59100E7DFCF /* HomeViewController.swift in Sources */,
+				B13948462ADD22FB0035593D /* NotRiskyViewController.swift in Sources */,
 				0B814F2B2AADF9DF00D80FC4 /* TaxPayerModel.swift in Sources */,
 				0B9CCAE82AB778A000C7C07C /* StatusViewController.swift in Sources */,
 				0B2131D52AA8CDA300E7DFCF /* RegistrationViewController.swift in Sources */,
 				0B814F232AADBCBE00D80FC4 /* TinViewModel.swift in Sources */,
-				0B2131B12AA8C3A000E7DFCF /* ViewController.swift in Sources */,
 				0B814F152AAB123D00D80FC4 /* AuthService.swift in Sources */,
 				0B2131AD2AA8C3A000E7DFCF /* AppDelegate.swift in Sources */,
 				0B814F1F2AADB78C00D80FC4 /* TinInformation.swift in Sources */,
@@ -482,7 +482,7 @@
 		};
 		0B2131BE2AA8C3A200E7DFCF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB88BDC0DE15AA0B9F4D97BB /* Pods-TaxScan.debug.xcconfig */;
+			baseConfigurationReference = ADFF3B6BD3EA4F9BEC1FD124 /* Pods-TaxScan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -510,7 +510,7 @@
 		};
 		0B2131BF2AA8C3A200E7DFCF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 318BD50A3B827295DAD854A7 /* Pods-TaxScan.release.xcconfig */;
+			baseConfigurationReference = 6DA904D8642035CDD1908F56 /* Pods-TaxScan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
